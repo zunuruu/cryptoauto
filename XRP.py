@@ -59,7 +59,7 @@ while True:
                     upbit.buy_market_order("KRW-XRP", krw*0.9995)
         else:
             xrp = get_balance("XRP")
-            if xrp > 0.002:
+            if xrp > 4:
                 upbit.sell_market_order("KRW-XRP", xrp*0.9995)
         time.sleep(1)
     except Exception as e:
